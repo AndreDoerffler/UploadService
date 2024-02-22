@@ -1,0 +1,9 @@
+﻿services:
+  uploadservice:
+    image: uploadservice
+    build:
+      context: .
+      dockerfile: UploadService/Dockerfile
+    ports: 
+      - 8080:8080
+      - 8081:8081
